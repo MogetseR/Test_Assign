@@ -20,9 +20,9 @@ proxy:
 
 batch:
   fast-fail:
-    # build-list:
-    # build-matrix:
-    # build-graph:
+  # build-list:
+  # build-matrix:
+  # build-graph:
 
 phases:
   install:
@@ -39,7 +39,7 @@ phases:
     on-failure:
     commands:
       - docker run -d -p 4444:4444 --shm-size="2g" selenium/standalone-chrome:4.1.4-20220427
-      - mvn install
+      - mvn clean install
     finally:
 
   build:
@@ -66,4 +66,3 @@ reports:
 
 cache:
   paths:
-
