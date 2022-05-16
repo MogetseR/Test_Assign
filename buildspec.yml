@@ -1,25 +1,25 @@
 version: 0.2
 
-run-as: Linux-user-name
+#run-as: Linux-user-name
 
-env:
-  shell: shell-tag
-  variables:
+#env:
+ # shell: shell-tag
+  #variables:
 
-  parameter-store:
+  #parameter-store:
 
-  exported-variables:
+  #exported-variables:
 
-  secrets-manager:
-    key:
-  git-credential-helper:
+  #secrets-manager:
+   # key:
+  #git-credential-helper:
 
-proxy:
-  upload-artifacts:
-  logs:
+#proxy:
+ # upload-artifacts:
+  #logs:
 
-batch:
-  fast-fail:
+#batch:
+ # fast-fail:
   # build-list:
   # build-matrix:
   # build-graph:
