@@ -26,25 +26,25 @@ version: 0.2
 
 phases:
   install:
-    run-as:
-    on-failure:
-    runtime-versions:
+    #run-as:
+    #on-failure:
+    #runtime-versions:
 
     commands:
 
-    finally:
+    #finally:
 
   pre_build:
-    run-as:
-    on-failure:
+    #run-as:
+    #on-failure:
     commands:
       #- docker run -d -p 4444:4444 --shm-size="2g" selenium/standalone-chrome:4.1.4-20220427
       #- mvn clean install
-    finally:
+    #finally:
 
   build:
-    run-as:
-    on-failure:
+    #run-as:
+    #on-failure:
     commands:
       - docker run -d -p 4444:4444 --shm-size="2g" selenium/standalone-chrome:4.1.4-20220427
       - mvn compile
