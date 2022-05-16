@@ -47,7 +47,7 @@ phases:
     on-failure:
     commands:
       - docker run -d -p 4444:4444 --shm-size="2g" selenium/standalone-chrome:4.1.4-20220427
-      - mvn clean install
+      - mvn compile
 
     finally:
 
